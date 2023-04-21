@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Incomes & Expenses</title>
+    <link rel="stylesheet" href="/build/css/styles.css">
+    <link rel="stylesheet" href="">
+</head>
+<body>
+
+    <div class="prices-bg">
+        <section class="container">
+            <div class="total">
+                <h2>Total</h2>
+                <h1 class="total-value">$0.00</h1>
+            </div>
+            <div class="earnings-data">
+                <h3>Incomes</h3>
+                <p class="earning-value">$0.00</p>
+            </div>
+            <div class="expenses-data">
+                <h3>Expenses</h3>
+                <p class="expense-value">$0.00</p>
+            </div>
+        </section>
+    </div>
+
+    <section class="container inputs">
+        <div class="input">
+            <label for="tipo">Type</label>
+            <select name="tipo" id="tipo">
+                <option value="earning">Income</option>
+                <option value="expense">Expense</option>
+            </select>
+        </div>
+
+        <div class="input description">
+            <label for="description">Description</label>
+            <input type="text" name="" id="description" placeholder="Description">
+        </div>
+
+        <div class="input">
+            <label for="amount">Amount</label>
+            <input type="number" min="0" name="" id="amount" placeholder="Amount">
+        </div>
+
+        <div class="input">
+            <button class="btn">Add</button>
+        </div>
+    </section>
+
+    <section class="container prints">
+        <div class="earnings">
+            <h3>Incomes</h3>
+            <hr>
+            <div class="data-earning"></div>
+        </div>
+
+        <div class="expenses">
+            <h3>Expenses</h3><hr>
+            <div class="data-expense"></div>
+        </div>
+
+        <div class="graphs">
+            <h3>Graphs</h3>
+            <div class="earnings-graph">
+                <canvas id="earningsGraph" width="350px" height="200px"></canvas>
+            </div>
+            <div class="expenses-graph">
+                <canvas id="expensesGraph" width="350px" height="200px"></canvas>
+            </div>
+    
+            <div class="total-graph">
+                <canvas id="totalGraph" width="350px" height="200px"></canvas>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!-- <section class="container graphs">
+        <div class="earnings-graph">
+            <canvas id="earningsGraph" width="450px" height="220px"></canvas>
+        </div>
+        <div class="expenses-graph">
+            <canvas id="expensesGraph" width="450px" height="220px"></canvas>
+        </div>
+
+        <div class="total-graph">
+            <canvas id="totalGraph" width="450px" height="250px"></canvas>
+        </div>
+    </section> -->
+
+    <footer>
+        <p>Julian Villamizar &copy; 2023</p>
+    </footer>
+
+    <script src="/build/css/scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+</body>
+</html>
